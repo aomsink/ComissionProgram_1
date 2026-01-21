@@ -14,5 +14,5 @@ jobs:
       - name: SonarQube Cloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ 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}}
-          SONAR_TOKEN: ${{ c48df7ee8a3b9cc4d6cfc6ae926ec4d0b91148bc }} # ต้องไปใส่ใน Settings > Secrets ของ GitHub ก่อน
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_SECRET: ${{ secrets.SONAR_SECRET }} # ต้องไปใส่ใน Settings > Secrets ของ GitHub ก่อน
